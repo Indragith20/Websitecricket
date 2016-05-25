@@ -1,0 +1,126 @@
+
+<style>
+header {
+    background-color: cadetblue;
+    color: white;
+    text-align: center;
+    padding: 19px;
+    height: 58px;	 
+}
+ 
+
+                    .style_prevu_kit
+                    {
+                        background-color: #84ffff;
+                        display:inline-block;
+                        color:black;
+                        border:0;
+                        width:150px;
+                        height:150px;
+                        position: relative;
+                        -webkit-transition: all 200ms ease-in;
+                        -webkit-transform: scale(1); 
+                        -ms-transition: all 200ms ease-in;
+                        -ms-transform: scale(1); 
+                        -moz-transition: all 200ms ease-in;
+                        -moz-transform: scale(1);
+                        transition: all 200ms ease-in;
+                        transform: scale(1);   
+
+                    }
+                    .style_prevu_kit:hover
+                    {
+                        border-color: #84ffff;
+                        border-style:solid;
+                        border-width: 5px;
+                        background-color: #e0f7fa;
+                        color:black;
+                        box-shadow: 0px 0px 150px #000000;
+                        z-index: 2;
+                        -webkit-transition: all 200ms ease-in;
+                        -webkit-transform: scale(1.5);
+                        -ms-transition: all 200ms ease-in;
+                        -ms-transform: scale(1.5);   
+                        -moz-transition: all 200ms ease-in;
+                        -moz-transform: scale(1.5);
+                        transition: all 200ms ease-in;
+                        transform: scale(1.5);
+                    }
+
+
+
+
+</style>
+
+<header>
+<button class="btn btn-primary" style="float:left;padding:0px; " ng-click="goBack()">Back</button>
+PlayerDetails
+</header>
+
+ <div class="col-md-3" style="float: left">
+                <img src="http://www.ksca.cricket.s3.amazonaws.com/images/players/no_image.png" style="height:300px">
+            </div>
+<div class="row">
+
+           
+            <div class="col-md-2 style_prevu_kit" style="padding-top:50px;text-align: center;">
+
+                <p>Playername</p>
+                <p>{{detPlayer.Playername}}</p>
+            </div>
+
+            <div class="col-md-2 style_prevu_kit" style="padding-top:50px;text-align: center;">
+                <p>MatchesPlayed</p>
+                <p>{{detPlayer.Matchesplayed}}</p>
+            </div>
+
+            <div class="col-md-2 style_prevu_kit" style="padding-top:50px;text-align: center;">
+                <p>RunsScored</p>
+                <p>{{detPlayer.Runsscored}}</p>
+            </div>
+
+
+    <div class="col-md-3"></div>
+    <div class="col-md-2 style_prevu_kit" style="padding-top:50px;text-align: center;">
+
+    <p>WicketsTaken</p>
+    <p>{{detPlayer.Wicketstaken}}</p>
+    </div>
+    
+    <div class="col-md-2 style_prevu_kit" style="padding-top:50px;text-align: center;">
+    <p>BattingAvg</p>
+    <p>{{detPlayer.Runsscored/detPlayer.Matchesplayed}}</p>
+    </div>
+    
+    <div class="col-md-2 style_prevu_kit" style="padding-top:50px;text-align: center;">
+    <p>BowlingAvg</p>
+    <p>{{detPlayer.Runsscored}}</p>
+</div>
+<div class="col-md-2 style_prevu_kit" style="padding-top:50px;text-align: center;">
+    <p>StyleofPlay</p>
+    <p>{{playerindepth.Styleofplay}}</p>
+    </div>
+
+    <div class="col-md-2 style_prevu_kit" style="padding-top:50px;text-align: center;">
+    <p>BattingType</p>
+    <p>{{playerindepth.Battingtype}}</p>
+    </div>
+
+<div class="col-md-2 style_prevu_kit" style="padding-top:50px;text-align: center;">
+    <p>BowlingType</p>
+    <p>{{playerindepth.Bowlingtype}}</p>
+    </div>
+    <div class="col-md-2 style_prevu_kit" style="padding-top:50px;text-align: center;">
+    <p>ContactNo</p>
+    <p>{{playerindepth.Contactno}}</p>
+    </div>
+
+
+</div>
+
+
+
+
+
+</body>
+</html>

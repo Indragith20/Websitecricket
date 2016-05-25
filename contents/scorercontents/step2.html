@@ -1,0 +1,1214 @@
+
+  <div class="container" style="margin-top:40px">
+  <h1 class="text-center">Second Innings</h1>
+  {{tosswon}} choose to {{action}}
+  <h2 class="text-center">Batting Scorecard</h2>
+  
+  <table class="table">
+    <thead>
+      <tr>
+        <th class="text-center">S.NO</th>
+        <th class="text-center">BATSMAN</th>
+        <th class="text-center">RUNS</th>
+        <th class="text-center">BALLS FACED</th>
+        <th class="text-center">FOURS</th>
+        <th class="text-center">SIXES</th>
+        <th class="text-center">STRIKE RATE</th>
+        <th class="text-center">HOW-OUT</th>
+        <th class="text-center">FIELDER</th>
+        <th class="text-center">BOWLER</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>
+             <select class="form-control" ng-model="name" >
+                    <option ng-repeat="team in firstBowlingTeam">{{team.Playername}}</option>
+       
+            </select> 
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="runs">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="balls">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="fours">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="sixes">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control"  value="{{(runs/balls)*100}}">
+            </div>
+        </td>
+        <td>
+            <select class="form-control" ng-model="howout" >
+                    <option value="caught">Caught</option>
+                    <option value="bowled">Bowled</option>
+                    <option value="hitwicket">Hit-Wicket</option>
+                    <option value="retired">Retired-Hurt</option>
+                    <option value="obstruction">Field Obstruction</option>
+                    <option value="runout">Run_OUT</option>
+                    <option value="lbw">LBW</option>
+       
+            </select> 
+
+        </td>
+        <td>
+            <select class="form-control" ng-model="fieldername" >
+                    <option ng-repeat="team in firstBowlingTeam">{{team.Playername}}</option>
+       
+            </select>
+        </td>
+        <td>
+           <select class="form-control" ng-model="bowlername" >
+                    <option ng-repeat="team in firstBowlingTeam">{{team.Playername}}</option>
+       
+            </select>
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>
+             <select class="form-control" ng-model="name1" >
+                    <option ng-repeat="team in firstBowlingTeam">{{team.Playername}}</option>
+       
+            </select> 
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="runs1">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="balls1">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="fours1">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="sixes1">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" value="{{(runs1/balls1)*100}}">
+            </div>
+        </td>
+        <td>
+            <select class="form-control" ng-model="howout1" >
+
+                    <option value="caught">Caught</option>
+                    <option value="bowled">Bowled</option>
+                    <option value="hitwicket">Hit-Wicket</option>
+                    <option value="retired">Retired-Hurt</option>
+                    <option value="obstruction">Field Obstruction</option>
+                    <option value="runout">Run_OUT</option>
+                    <option value="lbw">LBW</option>
+                    
+       
+            </select> 
+
+        </td>
+        <td>
+            <select class="form-control" ng-model="fieldername1" >
+                    <option ng-repeat="team in firstBattingTeam">{{team.Playername}}</option>
+       
+            </select>
+        </td>
+        <td>
+           <select class="form-control" ng-model="bowlername1" >
+                    <option ng-repeat="team in firstBattingTeam">{{team.Playername}}</option>
+       
+            </select>
+        </td>
+      </tr>
+      
+      <tr>
+        <td>3</td>
+        <td>
+             <select class="form-control" ng-model="name2" >
+                    <option ng-repeat="team in firstBowlingTeam">{{team.Playername}}</option>
+       
+            </select> 
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="runs2">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="balls2">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="fours2">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="sixes2">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control"  value="{{(runs2/balls2)*100}}">
+            </div>
+        </td>
+        <td>
+            <select class="form-control" ng-model="howout2" >
+                    <option value="caught">Caught</option>
+                    <option value="bowled">Bowled</option>
+                    <option value="hitwicket">Hit-Wicket</option>
+                    <option value="retired">Retired-Hurt</option>
+                    <option value="obstruction">Field Obstruction</option>
+                    <option value="runout">Run_OUT</option>
+                    <option value="lbw">LBW</option>
+       
+            </select> 
+
+        </td>
+        <td>
+            <select class="form-control" ng-model="fieldername2" >
+                    <option ng-repeat="team in firstBattingTeam">{{team.Playername}}</option>
+       
+            </select>
+        </td>
+        <td>
+           <select class="form-control" ng-model="bowlername2" >
+                    <option ng-repeat="team in firstBattingTeam">{{team.Playername}}</option>
+       
+            </select>
+        </td>
+      </tr>
+      
+      <tr>        
+      <td>4</td>
+      <td>
+             <select class="form-control" ng-model="name3" >
+                    <option ng-repeat="team in firstBowlingTeam">{{team.Playername}}</option>
+       
+            </select> 
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="runs3">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="balls3">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="fours3">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="sixes3">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control"  value="{{(runs3/balls3)*100}}">
+            </div>
+        </td>
+        <td>
+            <select class="form-control" ng-model="howout3" >
+                    <option value="caught">Caught</option>
+                    <option value="bowled">Bowled</option>
+                    <option value="hitwicket">Hit-Wicket</option>
+                    <option value="retired">Retired-Hurt</option>
+                    <option value="obstruction">Field Obstruction</option>
+                    <option value="runout">Run_OUT</option>
+                    <option value="lbw">LBW</option>
+       
+            </select> 
+
+        </td>
+        <td>
+            <select class="form-control" ng-model="fieldername3" >
+                    <option ng-repeat="team in firstBattingTeam">{{team.Playername}}</option>
+       
+            </select>
+        </td>
+        <td>
+           <select class="form-control" ng-model="bowlername3" >
+                    <option ng-repeat="team in firstBattingTeam">{{team.Playername}}</option>
+       
+            </select>
+        </td>
+      </tr>
+     
+      <tr>
+        <td>5</td>
+     <td>
+             <select class="form-control" ng-model="name4" >
+                    <option ng-repeat="team in firstBowlingTeam">{{team.Playername}}</option>
+       
+            </select> 
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="runs4">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="balls4">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="fours4">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="sixes4">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control"  value="{{(runs4/balls4)*100}}">
+            </div>
+        </td>
+        <td>
+            <select class="form-control" ng-model="howout4" >
+                    <option value="caught">Caught</option>
+                    <option value="bowled">Bowled</option>
+                    <option value="hitwicket">Hit-Wicket</option>
+                    <option value="retired">Retired-Hurt</option>
+                    <option value="obstruction">Field Obstruction</option>
+                    <option value="runout">Run_OUT</option>
+                    <option value="lbw">LBW</option>
+       
+            </select> 
+
+        </td>
+        <td>
+            <select class="form-control" ng-model="fieldername4" >
+                    <option ng-repeat="team in firstBattingTeam">{{team.Playername}}</option>
+       
+            </select>
+        </td>
+        <td>
+           <select class="form-control" ng-model="bowlername4" >
+                    <option ng-repeat="team in firstBattingTeam">{{team.Playername}}</option>
+       
+            </select>
+        </td>
+      </tr>
+      <tr>
+        <td>6</td>
+     <td>
+             <select class="form-control" ng-model="name5" >
+                    <option ng-repeat="team in firstBowlingTeam">{{team.Playername}}</option>
+       
+            </select> 
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="runs5">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="balls5">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="fours5">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="sixes5">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" value="{{(runs5/balls5)*100}}">
+            </div>
+        </td>
+        <td>
+            <select class="form-control" ng-model="howout5" >
+                    <option value="caught">Caught</option>
+                    <option value="bowled">Bowled</option>
+                    <option value="hitwicket">Hit-Wicket</option>
+                    <option value="retired">Retired-Hurt</option>
+                    <option value="obstruction">Field Obstruction</option>
+                    <option value="runout">Run_OUT</option>
+                    <option value="lbw">LBW</option>
+       
+            </select> 
+
+        </td>
+        <td>
+            <select class="form-control" ng-model="fieldername5" >
+                    <option ng-repeat="team in firstBattingTeam">{{team.Playername}}</option>
+       
+            </select>
+        </td>
+        <td>
+           <select class="form-control" ng-model="bowlername5" >
+                    <option ng-repeat="team in firstBattingTeam">{{team.Playername}}</option>
+       
+            </select>
+        </td>
+      </tr>
+      <tr>
+        <td>7</td>
+     <td>
+             <select class="form-control" ng-model="name6" >
+                    <option ng-repeat="team in firstBowlingTeam">{{team.Playername}}</option>
+       
+            </select> 
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="runs6">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="balls6">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="fours6">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="sixes6">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" value="{{(runs6/balls6)*100}}">
+            </div>
+        </td>
+        <td>
+            <select class="form-control" ng-model="howout6" >
+                    <option value="caught">Caught</option>
+                    <option value="bowled">Bowled</option>
+                    <option value="hitwicket">Hit-Wicket</option>
+                    <option value="retired">Retired-Hurt</option>
+                    <option value="obstruction">Field Obstruction</option>
+                    <option value="runout">Run_OUT</option>
+                    <option value="lbw">LBW</option>
+       
+            </select> 
+
+        </td>
+        <td>
+            <select class="form-control" ng-model="fieldername6" >
+                    <option ng-repeat="team in firstBattingTeam">{{team.Playername}}</option>
+       
+            </select>
+        </td>
+        <td>
+           <select class="form-control" ng-model="bowlername6" >
+                    <option ng-repeat="team in firstBattingTeam">{{team.Playername}}</option>
+       
+            </select>
+        </td>
+      </tr>
+      <tr>
+        <td>8</td>
+     <td>
+             <select class="form-control" ng-model="name7" >
+                    <option ng-repeat="team in firstBowlingTeam">{{team.Playername}}</option>
+       
+            </select> 
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="runs7">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="balls7">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="fours7">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="sixes7">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control"  value="{{(runs7/balls7)*100}}">
+            </div>
+        </td>
+        <td>
+            <select class="form-control" ng-model="howout7" >
+                    <option value="caught">Caught</option>
+                    <option value="bowled">Bowled</option>
+                    <option value="hitwicket">Hit-Wicket</option>
+                    <option value="retired">Retired-Hurt</option>
+                    <option value="obstruction">Field Obstruction</option>
+                    <option value="runout">Run_OUT</option>
+                    <option value="lbw">LBW</option>
+       
+            </select> 
+
+        </td>
+        <td>
+            <select class="form-control" ng-model="fieldername7" >
+                    <option ng-repeat="team in firstBattingTeam">{{team.Playername}}</option>
+       
+            </select>
+        </td>
+        <td>
+           <select class="form-control" ng-model="bowlername7" >
+                    <option ng-repeat="team in firstBattingTeam">{{team.Playername}}</option>
+       
+            </select>
+        </td>
+      </tr>
+      <tr>
+        <td>9</td>
+     <td>
+             <select class="form-control" ng-model="name8" >
+                    <option ng-repeat="team in firstBowlingTeam">{{team.Playername}}</option>
+       
+            </select> 
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="runs8">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="balls8">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="fours8">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="sixes8">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control"  value="{{(runs8/balls8)*100}}">
+            </div>
+        </td>
+        <td>
+            <select class="form-control" ng-model="howout8" >
+                    <option value="caught">Caught</option>
+                    <option value="bowled">Bowled</option>
+                    <option value="hitwicket">Hit-Wicket</option>
+                    <option value="retired">Retired-Hurt</option>
+                    <option value="obstruction">Field Obstruction</option>
+                    <option value="runout">Run_OUT</option>
+                    <option value="lbw">LBW</option>
+       
+            </select> 
+
+        </td>
+        <td>
+            <select class="form-control" ng-model="fieldername8" >
+                    <option ng-repeat="team in firstBattingTeam">{{team.Playername}}</option>
+       
+            </select>
+        </td>
+        <td>
+           <select class="form-control" ng-model="bowlername8" >
+                    <option ng-repeat="team in firstBattingTeam">{{team.Playername}}</option>
+       
+            </select>
+        </td>
+      </tr>
+     <tr>
+        <td>10</td>
+     <td>
+             <select class="form-control" ng-model="name9" >
+                    <option ng-repeat="team in firstBowlingTeam">{{team.Playername}}</option>
+       
+            </select> 
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="runs9">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="balls9">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="fours9">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="sixes9">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control"  value="{{(runs9/balls9)*100}}">
+            </div>
+        </td>
+        <td>
+            <select class="form-control" ng-model="howout9" >
+                    <option value="caught">Caught</option>
+                    <option value="bowled">Bowled</option>
+                    <option value="hitwicket">Hit-Wicket</option>
+                    <option value="retired">Retired-Hurt</option>
+                    <option value="obstruction">Field Obstruction</option>
+                    <option value="runout">Run_OUT</option>
+                    <option value="lbw">LBW</option>
+       
+            </select> 
+
+        </td>
+        <td>
+            <select class="form-control" ng-model="fieldername9" >
+                    <option ng-repeat="team in firstBattingTeam">{{team.Playername}}</option>
+       
+            </select>
+        </td>
+        <td>
+           <select class="form-control" ng-model="bowlername9" >
+                    <option ng-repeat="team in firstBattingTeam">{{team.Playername}}</option>
+       
+            </select>
+        </td>
+      </tr>
+      <tr>
+        <td>11</td>
+     <td>
+             <select class="form-control" ng-model="name10" >
+                    <option ng-repeat="team in firstBowlingTeam">{{team.Playername}}</option>
+       
+            </select> 
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="runs10">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="balls10">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="fours10">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="sixes10">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" value="{{(runs10/balls10)*100}}">
+            </div>
+        </td>
+        <td>
+            <select class="form-control" ng-model="howout10" >
+                    <option value="caught">Caught</option>
+                    <option value="bowled">Bowled</option>
+                    <option value="hitwicket">Hit-Wicket</option>
+                    <option value="retired">Retired-Hurt</option>
+                    <option value="obstruction">Field Obstruction</option>
+                    <option value="runout">Run_OUT</option>
+                    <option value="lbw">LBW</option>
+       
+            </select> 
+
+        </td>
+        <td>
+            <select class="form-control" ng-model="fieldername10" >
+                    <option ng-repeat="team in firstBattingTeam">{{team.Playername}}</option>
+       
+            </select>
+        </td>
+        <td>
+           <select class="form-control" ng-model="bowlername10" >
+                    <option ng-repeat="team in firstBattingTeam">{{team.Playername}}</option>
+       
+            </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Total Runs Scored</td>
+
+        <td>
+        <div class="form=group">
+            <input type="number" class="form-control" value="{{runs+runs1+runs2+runs3+runs4+runs5+runs6+runs7+runs8+runs9+runs10}}">
+            </div>
+            </td>
+
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="container" style="margin-top:40px">
+  <h2 class="text-center">Bowling Scorecard</h2>
+  
+  <table class="table">
+    <thead>
+      <tr>
+        <th class="text-center">S.NO</th>
+        <th class="text-center">BOWLER</th>
+        <th class="text-center">OVERS</th>
+        <th class="text-center">MAIDEN</th>
+        <th class="text-center">RUNS</th>
+        <th class="text-center">WICKETS</th>
+        <th class="text-center">ECONOMY</th>
+        <th class="text-center">NO-BALLs</th>
+        <th class="text-center">WIDEs</th>
+        <th class="text-center">LEG-BYEs</th>
+        <th class="text-center">BYEs</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>
+            <select class="form-control" ng-model="bowname" >
+                    <option ng-repeat="team in firstBattingTeam">{{team.Playername}}</option>
+       
+            </select>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="overs">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="maiden">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="runsgiven">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="wickets">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" value="{{runsgiven/overs}}">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="noball">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="wides">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="legbyes">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="byes">
+            </div>
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+                <td>
+            <select class="form-control" ng-model="bowname1" >
+                    <option ng-repeat="team in firstBattingTeam">{{team.Playername}}</option>
+       
+            </select>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="overs1">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="maiden1">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="runsgiven1">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="wickets1">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" value="{{runsgiven1/overs1}}">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="noball1">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="wides1">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="legbyes1">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="byes1">
+            </div>
+        </td>
+      </tr>
+      <tr>
+        <td>3</td>
+                <td>
+            <select class="form-control" ng-model="bowname2" >
+                    <option ng-repeat="team in firstBattingTeam">{{team.Playername}}</option>
+       
+            </select>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="overs2">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="maiden2">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="runsgiven2">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="wickets2">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" value="{{runsgiven2/overs2}}">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="noball2">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="wides2">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="legbyes2">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number" class="form-control" ng-model="byes2">
+            </div>
+        </td>
+      </tr>
+      <tr>
+        <td>4</td>
+                <td>
+            <select class="form-control" ng-model="bowname3" >
+                    <option ng-repeat="team in firstBattingTeam">{{team.Playername}}</option>
+       
+            </select>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" ng-model="overs3">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" ng-model="maiden3">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" ng-model="runsgiven3">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" ng-model="wickets3">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" value="{{runsgiven3/overs3}}">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" ng-model="noball3">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" ng-model="wides3">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" ng-model="legbyes3">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" ng-model="byes3">
+            </div>
+        </td>
+      </tr>
+      <tr>
+        <td>5</td>
+                <td>
+            <select class="form-control" ng-model="bowname4" >
+                    <option ng-repeat="team in firstBattingTeam">{{team.Playername}}</option>
+       
+            </select>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" ng-model="overs4">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" ng-model="maiden4">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" ng-model="runsgiven4">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" ng-model="wickets4">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" value="{{runsgiven4/overs4}}">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" ng-model="noball4">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" ng-model="wides4">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" ng-model="legbyes4">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" ng-model="byes4">
+            </div>
+        </td>
+      </tr>
+      <tr>
+        <td>6</td>
+                <td>
+            <select class="form-control" ng-model="bowname5" >
+                    <option ng-repeat="team in firstBattingTeam">{{team.Playername}}</option>
+       
+            </select>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" ng-model="overs5">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" ng-model="maiden5">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" ng-model="runsgiven5">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" ng-model="wickets5">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" value="{{runsgiven5/overs5}}">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" ng-model="noball5">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" ng-model="wides5">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" ng-model="legbyes5">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" ng-model="byes5">
+            </div>
+        </td>
+      </tr>
+      <tr>
+        <td>7</td>
+                <td>
+            <select class="form-control" ng-model="bowname6" >
+                    <option ng-repeat="team in firstBattingTeam">{{team.Playername}}</option>
+       
+            </select>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" ng-model="overs6">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" ng-model="maiden6">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" ng-model="runsgiven6">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" ng-model="wickets6">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" value="{{runsgiven6/overs6}}">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" ng-model="noball6">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" ng-model="wides6">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" ng-model="legbyes6">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" ng-model="byes6">
+            </div>
+        </td>
+      </tr>
+      <tr>
+        <td>8</td>
+                <td>
+            <select class="form-control" ng-model="bowname7" >
+                    <option ng-repeat="team in firstBattingTeam">{{team.Playername}}</option>
+       
+            </select>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" ng-model="overs7">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" ng-model="maiden7">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" ng-model="runsgiven7">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" ng-model="wickets7">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" value="{{runsgiven7/overs7}}">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" ng-model="noball7">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" ng-model="wides7">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" ng-model="legbyes7">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" ng-model="byes7">
+            </div>
+        </td>
+      </tr>
+      <tr>
+        <td>9</td>
+                <td>
+            <select class="form-control" ng-model="bowname8" >
+                    <option ng-repeat="team in firstBattingTeam">{{team.Playername}}</option>
+       
+            </select>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" ng-model="overs8">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" ng-model="maiden8">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" ng-model="runsgiven8">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" ng-model="wickets8">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" value="{{runsgiven8/overs8}}">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" ng-model="noball8">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" ng-model="wides8">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" ng-model="legbyes8">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="number"class="form-control" ng-model="byes8">
+            </div>
+        </td>
+      </tr>
+      <tr>
+        <td>Extras</td>
+        <td><input type="number"class="form-control" ng-model="extras" value="{{noball+wides+legbyes+byes+noball2+wides2+legbyes2+byes2+
+        noball3+wides3+legbyes3+byes3+
+        noball4+wides4+legbyes4+byes4+noball5+wides5+legbyes5+byes5+noball6+wides6+legbyes6+byes6+noball7+wides7+legbyes7+byes7+
+        noball8+wides8+legbyes8+byes8+noball9+wides9+legbyes9+byes9+noball10+wides10+legbyes10+byes10}}"></td>
+      </tr>
+      <tr>
+        <td>Total</td>
+        <td><input type="number" class="form-control" value="{{runsscored+extras}}"></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="col-md-4 "> 
+      <button class="btn btn-primary" style="margin-bottom: 30px" ng-click="goToFinalStep()">Proceed To The Next Step</button> 
+      </div>
+ 
+</div>

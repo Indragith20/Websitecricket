@@ -1,0 +1,81 @@
+
+
+<style>
+table {
+      background-color: #b3e5fc;
+      color:black;
+    }
+
+    
+    tr:hover { 
+      background-color: #e0f7fa;
+      color:black;
+    }
+ /* .zui-table {
+    border: solid 1px #DDEEEE;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font: normal 13px Arial, sans-serif;
+}
+.zui-table thead th {
+    background-color: #DDEFEF;
+    border: solid 1px #DDEEEE;
+    color: #336B6B;
+    padding: 10px;
+    text-align: left;
+    text-shadow: 1px 1px 1px #fff;
+}
+.zui-table tbody td {
+    border: solid 1px #DDEEEE;
+    color: #333;
+    padding: 10px;
+    text-shadow: 1px 1px 1px #fff;
+}
+.zui-table-highlight tbody tr:hover {
+    background-color: #CCE7E7;
+}
+.zui-table-horizontal tbody td {
+    border-left: none;
+    border-right: none;
+}*/
+</style>
+
+<div class="container">
+            
+  <table class="table" ng-show="visible">
+    <thead>
+      <tr>
+        <th>PlayerName</th>
+        <th>Matches Played</th>
+        <th>Runs Scored</th>
+        <th>Wickets Taken</th>
+        <th>Catches</th>
+        <th>Batting Avg</th>
+        <th>Bowling Avg</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="player in playerDetails" ng-click="getPlayerDet(player)">
+        
+        <td >{{player.Playername}}</td>
+        <td>{{player.Matchesplayed}}</td>
+        <td>{{player.Runsscored}}</td>
+        <td>{{player.Wicketstaken}}</td>
+        <td>{{player.Catches}}</td>
+        <td>{{player.Battingavg}}</td>
+        <td>{{player.BowlingAvg}}</td>
+        
+      </tr>
+      <tr>
+      
+      </tr>
+      
+    </tbody>
+
+  </table>
+  <div ng-hide="visible" class="alert alert-danger" role="alert">{{erromsg}}</div>
+
+  </div>
+
+
+

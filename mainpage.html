@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Case</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="../css/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/angular/angular.js"></script>
+  <script type="text/javascript" src="../js/angular-route/angular-route.js"></script>
+  <script type="text/javascript" src="../js/ui-router-master/release/angular-ui-router.js"></script>
+  <script type="text/javascript" src="./controller/logincontroller.js"></script>
+  <script type="text/javascript" src="../js/angular-route/angular-route.js"></script>
+    <script type="text/javascript" src="../js/ui-router-master/release/angular-ui-router.js"></script>
+    <link href="../css/owl.carousel.css" rel="stylesheet" type="text/css" media="all" /><!-- 
+    <link href="../css/style.css" rel='stylesheet' type='text/css' /> -->
+    <script type="text/javascript" src="./controller/scoresheetController.js"></script>
+    <script type="text/javascript" src="./controller/managerController.js"></script>
+    <script type="text/javascript" src="./controller/performanceController.js"></script>
+    <script type="text/javascript" src="./controller/scheduleController.js"></script>  
+    <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+      <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script> 
+      <script type="text/javascript" src="./contents/admincontents/controller/fixturesController.js"></script>    
+    
+</head>
+<style>
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    
+}
+.alert{
+  background-color: #26A69A;
+  color:#fff !important;
+  }
+ #loginbox {
+            margin-top: 175px;
+        }
+
+        #loginbox > div:first-child {
+            padding-bottom: 10px;
+        }
+
+
+        .panel {
+            background-color: #B2DFDB;
+            width: 500px;
+        }
+
+        .panel-body {
+            padding-top: 30px;
+            background-color: rgba(2555,255,255,.3);
+        }
+        .panel-heading{
+          background-color: #26A69A !important;
+          color:#fff !important;
+
+        }
+        .btn {
+            padding: 9px 13px;
+            border: 0 none;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .btn:focus, .btn:active:focus, .btn.active:focus {
+            outline: 0 none;
+            background-color:#00A885 !important; 
+        }
+        .btn:hover{
+          background-color:#00A885 !important; 
+        }
+
+        .btn-primary {
+            background: #26A69A;
+            color: #ffffff;
+        }
+        a:hover {
+          background-color: #00A885 !important;
+          color: #fff !important;
+          transition-duration: 1s;
+      }
+}
+</style>
+<body ng-app="scorerApp" style="background-color: #26A69A;" >
+        <div ui-view></div>
+</body>
+</html>

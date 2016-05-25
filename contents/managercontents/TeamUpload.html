@@ -1,0 +1,711 @@
+<div class="container-fluid">
+<div class="row" style="margin-top: 30px">
+    <div class="col-md-2"></div>
+<div class="col-md-2" >No Of Team Members</div>
+<div class="col-md-4">
+<!--   <select class="form-control" ng-model="modelid" ng-change="selectedvalue(modelid)">
+  
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+      <option value="4">Four</option>
+      <option value="5">Five</option>
+      <option value="6">Six</option>
+      <option value="7">Seven</option>
+      <option value="8">Eight</option>
+      <option value="9">Nine</option>
+      <option value="10">Ten</option>
+</select> -->
+
+    </div>
+    </div>
+<br/>
+    </div>
+<table class="table">
+    <thead>
+      <tr>
+        <th class="text-center">Player Name</th>
+        <th class="text-center">Style of Play</th>
+        <th class="text-center">R/L Batting</th>
+        <th class="text-center">R/L Bowling</th>
+        <th class="text-center">Address</th>
+        <th class="text-center">Contactno</th>
+        <th class="text-center">Mailid</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.playername1">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+               <select class="form-control" ng-model="playerform.styleofplay1">
+                              <option value="batting">Batting</option>
+                              <option value="bowling">Bowling</option>
+                              <option value="allrounder">All-Rounder</option>
+                              <option value="wicketkeeper">WicketKeeper</option>
+                </select>
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.batting1">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.bowling1">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.address1">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.contactno1">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.mailid1">
+            </div>
+        </td>
+       
+      </tr>
+      <tr>
+        
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.playername2">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+               <select class="form-control" ng-model="playerform.styleofplay2">
+                              <option value="batting">Batting</option>
+                              <option value="bowling">Bowling</option>
+                              <option value="allrounder">All-Rounder</option>
+                              <option value="wicketkeeper">WicketKeeper</option>
+                </select>
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.batting2">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.bowling2">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.address2">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.contactno2">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.mailid2">
+            </div>
+        </td>
+       
+      </tr>
+      <tr>
+        
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.playername3">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+               <select class="form-control" ng-model="playerform.styleofplay3">
+                              <option value="batting">Batting</option>
+                              <option value="bowling">Bowling</option>
+                              <option value="allrounder">All-Rounder</option>
+                              <option value="wicketkeeper">WicketKeeper</option>
+                </select>
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.batting3">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.bowling3">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.address3">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.contactno3">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.mailid3">
+            </div>
+        </td>
+       
+      </tr>
+      <tr>
+        
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.playername4">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+               <select class="form-control" ng-model="playerform.styleofplay4">
+                              <option value="batting">Batting</option>
+                              <option value="bowling">Bowling</option>
+                              <option value="allrounder">All-Rounder</option>
+                              <option value="wicketkeeper">WicketKeeper</option>
+                </select>
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.batting4">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.bowling4">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.address4">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.contactno4">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.mailid4">
+            </div>
+        </td>
+       
+      </tr>
+      <tr>
+        
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.playername5">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+               <select class="form-control" ng-model="playerform.styleofplay5">
+                              <option value="batting">Batting</option>
+                              <option value="bowling">Bowling</option>
+                              <option value="allrounder">All-Rounder</option>
+                              <option value="wicketkeeper">WicketKeeper</option>
+                </select>
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.batting5">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.bowling5">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.address5">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.contactno5">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.mailid5">
+            </div>
+        </td>
+       
+      </tr>
+      <tr>
+        
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.playername6">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+               <select class="form-control" ng-model="playerform.styleofplay6">
+                              <option value="batting">Batting</option>
+                              <option value="bowling">Bowling</option>
+                              <option value="allrounder">All-Rounder</option>
+                              <option value="wicketkeeper">WicketKeeper</option>
+                </select>
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.batting6">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.bowling6">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.address6">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.contactno6">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.mailid6">
+            </div>
+        </td>
+       
+      </tr>
+      <tr>
+        
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.playername7">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+               <select class="form-control" ng-model="playerform.styleofplay7">
+                              <option value="batting">Batting</option>
+                              <option value="bowling">Bowling</option>
+                              <option value="allrounder">All-Rounder</option>
+                              <option value="wicketkeeper">WicketKeeper</option>
+                </select>
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.batting7">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.bowling7">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.address7">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.contactno7">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.mailid7">
+            </div>
+        </td>
+       
+      </tr>
+      <tr>
+        
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.playername8">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+               <select class="form-control" ng-model="playerform.styleofplay8">
+                              <option value="batting">Batting</option>
+                              <option value="bowling">Bowling</option>
+                              <option value="allrounder">All-Rounder</option>
+                              <option value="wicketkeeper">WicketKeeper</option>
+                </select>
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.batting8">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.bowling8">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.address8">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.contactno8">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.mailid8">
+            </div>
+        </td>
+       
+      </tr>
+      <tr>
+        
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.playername9">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+               <select class="form-control" ng-model="playerform.styleofplay9">
+                              <option value="batting">Batting</option>
+                              <option value="bowling">Bowling</option>
+                              <option value="allrounder">All-Rounder</option>
+                              <option value="wicketkeeper">WicketKeeper</option>
+                </select>
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.batting9">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.bowling9">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.address9">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.contactno9">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.mailid9">
+            </div>
+        </td>
+       
+      </tr>
+      <tr>
+        
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.playername10">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+               <select class="form-control" ng-model="playerform.styleofplay10">
+                              <option value="batting">Batting</option>
+                              <option value="bowling">Bowling</option>
+                              <option value="allrounder">All-Rounder</option>
+                              <option value="wicketkeeper">WicketKeeper</option>
+                </select>
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.batting10">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.bowling10">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.address10">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.contactno10">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.mailid10">
+            </div>
+        </td>
+       
+      </tr>
+      <tr>
+        
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.playername11">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+               <select class="form-control" ng-model="playerform.styleofplay11">
+                              <option value="batting">Batting</option>
+                              <option value="bowling">Bowling</option>
+                              <option value="allrounder">All-Rounder</option>
+                              <option value="wicketkeeper">WicketKeeper</option>
+                </select>
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.batting11">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.bowling11">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.address11">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.contactno11">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.mailid11">
+            </div>
+        </td>
+       
+      </tr>
+      <tr>
+        
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.playername12">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+               <select class="form-control" ng-model="playerform.styleofplay12">
+                              <option value="batting">Batting</option>
+                              <option value="bowling">Bowling</option>
+                              <option value="allrounder">All-Rounder</option>
+                              <option value="wicketkeeper">WicketKeeper</option>
+                </select>
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.batting12">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.bowling12">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.address12">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.contactno12">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.mailid12">
+            </div>
+        </td>
+       
+      </tr>
+      <tr>
+        
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.playername13">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+               <select class="form-control" ng-model="playerform.styleofplay13">
+                              <option value="batting">Batting</option>
+                              <option value="bowling">Bowling</option>
+                              <option value="allrounder">All-Rounder</option>
+                              <option value="wicketkeeper">WicketKeeper</option>
+                </select>
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.batting13">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.bowling13">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.address13">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.contactno13">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.mailid13">
+            </div>
+        </td>
+       
+      </tr>
+      <tr>
+        
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.playername14">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+               <select class="form-control" ng-model="playerform.styleofplay14">
+                              <option value="batting">Batting</option>
+                              <option value="bowling">Bowling</option>
+                              <option value="allrounder">All-Rounder</option>
+                              <option value="wicketkeeper">WicketKeeper</option>
+                </select>
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.batting14">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.bowling14">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.address14">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.contactno14">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.mailid14">
+            </div>
+        </td>
+       
+      </tr>
+      <tr>
+        
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.playername15">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+               <select class="form-control" ng-model="playerform.styleofplay15">
+                              <option value="batting">Batting</option>
+                              <option value="bowling">Bowling</option>
+                              <option value="allrounder">All-Rounder</option>
+                              <option value="wicketkeeper">WicketKeeper</option>
+                </select>
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.batting15">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.bowling15">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.address15">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.contactno15">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="playerform.mailid15">
+            </div>
+        </td>
+       
+      </tr>
+      
+      
+      
+
+      </tbody>
+      </table>
+
+
+
+      <button type="submit" class="btn btn-default" ng-click="submitPlayerForm(playerform)">Submit</button>
+
+
+
+</div>
+</div>

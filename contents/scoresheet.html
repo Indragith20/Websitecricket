@@ -1,0 +1,93 @@
+<div class="container">
+<div class="row">
+<div class="col-md-4"></div>
+    <div class="col-md-2">
+    <h1 style="margin: 25px;">ScoreSheet</h1>
+    </div>
+    <div class="col-md-4"></div>
+</div>
+<div class="row">
+<div class="col-md-1"></div>
+<div class="col-md-10">
+<ul class="nav nav-navbar nav-justified">
+					 <li><a ui-sref=".battingscoresheet" style="margin-bottom:30px">Batting ScoreCard</a></li>
+                    
+				    <li>
+						<a ui-sref=".bowlingscoresheet" style="margin-bottom:30px">Bowling ScoreCard<b class="caret"></b></a>
+						
+					  </li>
+
+				</ul>
+				</div>
+				<div class="col-md-1"></div>
+</div>
+<div class="row">
+    <div class="col-md-2"></div>
+<div class="col-md-2">Select the Division</div>
+<div class="col-md-4">
+  <select class="form-control">
+  
+      <option value="1">First Division</option>
+      <option value="2">Second Division</option>
+      <option value="3">Third Division</option>
+      
+</select>
+
+    </div>
+    </div>
+   
+<div class="row">
+    <div class="col-md-4">
+        <div class="container-fluid" style="margin-top: 20px; margin-bottom: 20px;border-style: solid;border-color: #000;padding: 35px;">
+       <h3 style="margin-left: 75px"> Match Between</h3> 
+            <hr/>
+       <select class="form-control" >
+        <option ng-repeat="team in teamDet">{{team.Teamname}}</option>
+          
+      
+    </select>  <h4 style="margin-left: 135px" >Vs </h4>  
+             <select class="form-control" >
+        <option ng-repeat="team in teamDet">{{team.Teamname}}</option>
+          
+      
+    </select> 
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="container-fluid" style="margin-top: 20px; margin-bottom: 20px;border-style: solid;border-color: #000;padding: 35px;">
+       <h3 style="margin-left: 75px">Team Officials</h3> 
+            <hr/>
+         <select class="form-control" >
+        <option ng-repeat="umpire in umpireDet">{{umpire.Name}}</option>
+          
+      
+    </select> <h4 style="margin-left: 135px" >And </h4>  
+               <select class="form-control" >
+        <option ng-repeat="umpire in umpireDet">{{umpire.Name}}</option>
+          
+      
+    </select> 
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="container-fluid" style="margin-top: 20px; margin-bottom: 20px;border-style: solid;border-color: #000;padding: 35px;margin-right: 25px;">
+       <h3 style="margin-left: 75px">Scorers</h3> 
+            <hr/>
+      <select class="form-control" >
+        <option ng-repeat="scorer in scorerDet">{{scorer.Name}}</option>
+          
+      
+    </select> 
+        </div>
+    </div>
+ 
+
+
+     <div ui-view></div>
+    
+    </div>
+
+
+    </div>

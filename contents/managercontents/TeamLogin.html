@@ -1,0 +1,26 @@
+
+<div class="container" style="background-color: #e1f5fe ; color:#fff !important"">
+
+<div class="collapse navbar-collapse"   id="bs-example-navbar-collapse-1">
+				<ul class="nav nav-navbar nav-justified" style="margin-left: -20px;margin-top: 20px;" >
+					 <li><a ui-sref=".upload" style="margin-top: 35px" ng-hide="teamUploadDisabled">Team Upload</a>
+					 	<a ui-sref=".member" class="dropdown-toggle" ng-show="teamUploadDisabled" style="margin-top: 35px" data-toggle="dropdown">Add/Remove Member<b class="caret"></b></a>
+					 </li>
+                    
+				   	<li><a ui-sref=".schedule" style="margin-top: 35px ;margin-bottom:5px">Schedule</a></li>
+					<li><a ui-sref=".feedback" style="margin-top: 35px">Feedback</a></li>
+
+					  <li>
+						<a ui-sref=".performance" style="margin-top: 35px">Performance</a>
+                            
+			</li>
+                    
+
+				</ul>
+			</div>
+			<div class="row">
+			<hr/>
+			</div>
+			<div ui-view></div>
+			</div>
+			

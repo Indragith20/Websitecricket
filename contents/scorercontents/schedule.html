@@ -1,0 +1,36 @@
+<style>
+		table {
+			background-color:#009688 ;
+		}
+
+		
+		tr:hover { 
+			background-color:#ffab91;
+		}
+
+</style>
+
+<div class="container">
+<table class="table">
+<thead>
+<tr>
+<th>Division</th>
+<th>Match Details</th>
+<th>Date</th>
+<th>Umpire1</th>
+<th>Umpire2</th>
+<th>Scorer</th>
+</tr>
+</thead>
+<tbody>
+<tr class="grow" ng-repeat="sch in scorerschedule">
+<td>{{sch.Division}}</td>
+<td>{{sch.Teamname1}} Vs {{sch.Teamname2}}</td>
+<td>{{sch.Date}}</td>
+<td>{{sch.Umpire1}}</td>
+<td>{{sch.Umpire2}}</td>
+<td>{{sch.Scorer}}</td>
+</tr>
+</tbody>
+</table>
+</div>

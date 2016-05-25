@@ -1,0 +1,111 @@
+<div class="container">
+<div class="row">
+<div class="col-md-4"></div>
+    <div class="col-md-2">
+    <h1 style="margin: 25px;">ScoreSheet</h1>
+    </div>
+    <div class="col-md-4"></div>
+</div>
+
+<div class="row">
+    <div class="col-md-2"></div>
+<div class="col-md-2">Select the Division</div>
+<div class="col-md-4">
+  <select class="form-control" ng-model="divisionValue" ng-change="selectedDivision(divisionValue)">
+  
+      <option value="first">First Division</option>
+      <option value="second">Second Division</option>
+      <option value="third">Third Division</option>
+      
+</select>
+
+    </div>
+    </div>
+   
+<div class="row">
+    <div class="col-md-3">
+        <div class="container-fluid" style="margin-top: 20px; margin-bottom: 20px;border-style: solid;border-color: #000;padding: 35px;">
+       <h3> Match Between</h3> 
+            <hr/>
+       <select class="form-control" ng-model="team1">
+        <option ng-repeat="team in teamDet">{{team.Teamname}}</option>
+          
+      
+    </select>  <h4 style="margin-left: 75px;">Vs </h4>  
+             <select class="form-control" ng-model="team2" >
+        <option ng-repeat="team in teamDet">{{team.Teamname}}</option>
+          
+      
+    </select> 
+        </div>
+    </div>
+    
+    <div class="col-md-3">
+        <div class="container-fluid" style="margin-top: 20px; margin-bottom: 20px;border-style: solid;border-color: #000;padding: 35px;">
+       <h3>Team Officials</h3> 
+            <hr/>
+         <select class="form-control" ng-model="umpire1">
+        <option ng-repeat="umpire in umpireDet">{{umpire.Name}}</option>
+          
+      
+    </select> <h4 style="margin-left: 75px;">And </h4>  
+               <select class="form-control" ng-model="umpire2" >
+        <option ng-repeat="umpire in umpireDet">{{umpire.Name}}</option>
+          
+      
+    </select> 
+        </div>
+    </div>
+
+  
+    <div class="col-md-3">
+        <div class="container-fluid" style="margin-top: 20px; margin-bottom: 20px;border-style: solid;border-color: #000;padding: 35px;margin-right: 25px;height: 270px;">
+       <h3>Scorers</h3> 
+            <hr/>
+      <select class="form-control" ng-model="scorer">
+        <option ng-repeat="scorer in scorerDet">{{scorer.Name}}</option>
+          
+      
+    </select>
+          
+      
+        </div>
+    </div>
+   
+   
+      <div class="col-md-3">
+        <div class="container-fluid" style="margin-top: 20px; margin-right:20px;margin-bottom: 20px;border-style: solid;border-color: #000;padding: 35px;">
+       <h3> Date </h3> 
+            <hr/>
+            
+                 <input type="text" id="datepicker-13" ng-model="date ">
+                  <script>
+         $(function() {
+            $( "#datepicker-13" ).datepicker({ dateFormat: "yy-mm-dd" }).val();
+            
+         });
+      </script>
+
+
+
+
+
+
+    </div>
+        </div>
+    </div>
+    
+    
+    <div class="col-md-4"></div>
+   <div class="col-md-4 "> 
+      <button class="btn btn-primary" style="margin-bottom: 30px" ng-click="createFixture()">Create Fixtures</button> 
+      </div>
+ 
+
+     
+    
+    </div>
+
+
+
+    </div>
